@@ -211,12 +211,12 @@
             this.Bots = new System.Windows.Forms.TabControl();
             this.RemoteControls = new System.Windows.Forms.TabPage();
             this.WonderTradeBot = new System.Windows.Forms.TabPage();
+            this.label59 = new System.Windows.Forms.Label();
+            this.WTtradesNo = new System.Windows.Forms.NumericUpDown();
             this.label57 = new System.Windows.Forms.Label();
             this.WTSlot = new System.Windows.Forms.NumericUpDown();
             this.label58 = new System.Windows.Forms.Label();
             this.WTBox = new System.Windows.Forms.NumericUpDown();
-            this.label59 = new System.Windows.Forms.Label();
-            this.WTtradesNo = new System.Windows.Forms.NumericUpDown();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.moneyNum)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.milesNum)).BeginInit();
@@ -279,9 +279,9 @@
             this.Bots.SuspendLayout();
             this.RemoteControls.SuspendLayout();
             this.WonderTradeBot.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.WTtradesNo)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.WTSlot)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.WTBox)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.WTtradesNo)).BeginInit();
             this.SuspendLayout();
             // 
             // txtLog
@@ -2598,6 +2598,32 @@
             this.WonderTradeBot.TabIndex = 1;
             this.WonderTradeBot.Text = "Wonder Trade";
             // 
+            // label59
+            // 
+            this.label59.AutoSize = true;
+            this.label59.Location = new System.Drawing.Point(98, 7);
+            this.label59.Name = "label59";
+            this.label59.Size = new System.Drawing.Size(53, 13);
+            this.label59.TabIndex = 105;
+            this.label59.Text = "# Trades:";
+            // 
+            // WTtradesNo
+            // 
+            this.WTtradesNo.Location = new System.Drawing.Point(101, 26);
+            this.WTtradesNo.Maximum = new decimal(new int[] {
+            300,
+            0,
+            0,
+            0});
+            this.WTtradesNo.Name = "WTtradesNo";
+            this.WTtradesNo.Size = new System.Drawing.Size(40, 20);
+            this.WTtradesNo.TabIndex = 104;
+            this.WTtradesNo.Value = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            // 
             // label57
             // 
             this.label57.AutoSize = true;
@@ -2655,27 +2681,6 @@
             this.WTBox.Size = new System.Drawing.Size(40, 20);
             this.WTBox.TabIndex = 100;
             this.WTBox.Value = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
-            // 
-            // label59
-            // 
-            this.label59.AutoSize = true;
-            this.label59.Location = new System.Drawing.Point(98, 7);
-            this.label59.Name = "label59";
-            this.label59.Size = new System.Drawing.Size(53, 13);
-            this.label59.TabIndex = 105;
-            this.label59.Text = "# Trades:";
-            // 
-            // WTtradesNo
-            // 
-            this.WTtradesNo.Location = new System.Drawing.Point(101, 26);
-            this.WTtradesNo.Name = "WTtradesNo";
-            this.WTtradesNo.Size = new System.Drawing.Size(40, 20);
-            this.WTtradesNo.TabIndex = 104;
-            this.WTtradesNo.Value = new decimal(new int[] {
             1,
             0,
             0,
@@ -2778,9 +2783,9 @@
             this.RemoteControls.PerformLayout();
             this.WonderTradeBot.ResumeLayout(false);
             this.WonderTradeBot.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.WTtradesNo)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.WTSlot)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.WTBox)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.WTtradesNo)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
