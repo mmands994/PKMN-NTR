@@ -95,11 +95,7 @@ namespace pkmn_ntr.Bot
             { // Run bot
                 DialogResult dialogResult = MessageBox.Show("This scirpt will try to Wonder Trade " + Trades.Value + " pokémon, starting from the slot " + Slot.Value + " of box " + Box.Value + ". Remember to read the wiki for this bot in GitHub before starting.\r\n\r\nDo you want to continue?", "Wonder Trade Bot", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
                 if (dialogResult == DialogResult.Yes && Trades.Value > 0)
-                {
-                    if (Program.gCmdWindow.enableillegal)
-                    {
-                        MessageBox.Show("Illegal mode enabled. If using a WT folder mode, it will write any pokémon to the game, regardless of legality. It will also attempt to Wonder Trade illegal pokémon it finds.", "Illegal mode", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                    }
+               
                     // Configure GUI
                     Delg.SetText(RunStop, "Stop Bot");
                     // Initialize variables
@@ -272,19 +268,7 @@ namespace pkmn_ntr.Bot
                                     Report("Bot: Pokémon found - 0x" + currentCHK.ToString("X4"));
                                     botstate = botstates.writelastbox;
                                 }
-                                else
-                                {
-                                    if (Program.gCmdWindow.enableillegal)
-                                    {
-                                        Report("Bot: Pokémon cannot be traded, is an egg or have special ribbons.");
-                                    }
-                                    else
-                                    {
-                                        Report("Bot: Pokémon cannot be traded, is illegal or is an egg or have special ribbons.");
-                                    }
-                                    getNextSlot();
-                                }
-                            }
+                               
                             break;
 
                         case botstates.readfolder:
