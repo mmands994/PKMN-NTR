@@ -95,7 +95,8 @@ namespace pkmn_ntr.Bot
             { // Run bot
                 DialogResult dialogResult = MessageBox.Show("This scirpt will try to Wonder Trade " + Trades.Value + " pokémon, starting from the slot " + Slot.Value + " of box " + Box.Value + ". Remember to read the wiki for this bot in GitHub before starting.\r\n\r\nDo you want to continue?", "Wonder Trade Bot", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
                 if (dialogResult == DialogResult.Yes && Trades.Value > 0)
-               
+                }
+               {
                     // Configure GUI
                     Delg.SetText(RunStop, "Stop Bot");
                     // Initialize variables
